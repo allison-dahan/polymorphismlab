@@ -55,16 +55,17 @@ class Node {
     }
   
     compare(leftPos: number, rightPos: number): boolean {
-
-    }
+        if (!this.head) throw new Error("List is empty");
+        return this.at(leftPos).data > this.at(rightPos).data;
+      }
   
     swap(leftPos: number, rightPos: number): void {
-      let leftPos = this.head;
-      let right 
-      if () {
+        if (!this.head) throw new Error("List is empty");
 
+        let leftNode = this.at(leftPos);
+        let rightNode = this.at(rightPos);
 
-      }
+        [leftNode.data, rightNode.data] = [rightNode.data, leftNode.data]
     }
   
     print(): void {
