@@ -28,7 +28,7 @@ class Node {
   
     // Should return number of Nodes in List
     get length(): number {
-      // implement this part yourself
+      return this.data.length
     }
   
    // Convenience method that returns a Node at a given index
