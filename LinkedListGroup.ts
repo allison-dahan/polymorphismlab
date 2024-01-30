@@ -28,7 +28,13 @@ class Node {
   
     // Should return number of Nodes in List
     get length(): number {
-      return this.data.length
+      let temp = this.head;
+      let size = 0;
+      while (temp !== null ) {
+        size++;
+        temp = temp.next;
+      }
+      return size;
     }
   
    // Convenience method that returns a Node at a given index
@@ -49,11 +55,16 @@ class Node {
     }
   
     compare(leftPos: number, rightPos: number): boolean {
-      // Implement this part yourself
+
     }
   
     swap(leftPos: number, rightPos: number): void {
-      // Implement this part yourself
+      let leftPos = this.head;
+      let right 
+      if () {
+
+
+      }
     }
   
     print(): void {
